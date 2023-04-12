@@ -1,0 +1,13 @@
+{
+  "$schema": "https://raw.githubusercontent.com/WordPress/gutenberg/trunk/schemas/json/block.json",
+  "apiVersion": 2,
+  "version": "1.0.0",
+  "name": "portfolio-theme-blocks/posts-display",
+  "title": "Posts Display",
+  "category": "text",
+  "description": "Adds a posts display",
+  "textdomain": "portfolio-theme-blocks",
+  "editorScript": "file:./index.js",
+  "viewScript": ["posts-display-frontend"],
+  "style": ""
+}
