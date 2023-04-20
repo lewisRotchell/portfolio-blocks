@@ -13,7 +13,7 @@ function pb_register_blocks()
 
     foreach ($blocks as $block) {
         register_block_type(
-            PB_PLUGIN_DIR . 'build/blocks/' . $block['name'],
+            PB_PLUGIN_DIR . 'build/' . $block['name'],
             isset($block['options']) ? $block['options'] : []
         );
     }

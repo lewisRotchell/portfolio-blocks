@@ -2,7 +2,7 @@ const defaultConfig = require("@wordpress/scripts/config/webpack.config");
 const path = require("path");
 const fs = require("fs");
 
-const blockPath = path.resolve(__dirname, "src", "blocks");
+const blockPath = path.resolve(__dirname, "src");
 
 const createBlockEntryPoints = () => {
   const entryPoints = {};
@@ -12,7 +12,7 @@ const createBlockEntryPoints = () => {
     const blockFrontendPath = path.resolve(blockPath, block, "frontend.js");
 
     if (fs.existsSync(blockFrontendPath)) {
-      entryPoints[`blocks/${block}/frontend`] = blockFrontendPath;
+      entryPoints[`${block}/frontend`] = blockFrontendPath;
     }
   });
 

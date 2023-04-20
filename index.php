@@ -18,6 +18,8 @@ if (!function_exists('add_action')) {
 //Setup
 define('PB_PLUGIN_DIR', plugin_dir_path(__FILE__));
 
+require_once dirname(__FILE__) . './src/posts-display/posts-display.php';
+
 //Includes
 //glob is a function that returns an array of files
 $rootFiles = glob(PB_PLUGIN_DIR . 'includes/*.php');
